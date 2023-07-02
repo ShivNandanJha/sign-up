@@ -67,6 +67,6 @@ app.post("/", function (req, res) {
   console.log(" " + fName + " " + lName + " " + email);
 });
 
-app.listen(3000, function (req, res) {
+app.listen(process.env.PORT||3000, function (req, res) {
   console.log("Welcome to the Server");
 });
